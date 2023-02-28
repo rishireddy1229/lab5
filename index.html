@@ -4,47 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firebase</title>
+    <style>label{display:inline-block;width:80px}</style>
 </head>
 <body align="center">
-    <h1 align="center">
-        STUDENT MANAGEMENT
-    </h1>
-    <label for="name">NAME</label>
-    <input type="text" id="sname"><br><br>
-    <label for="rollno">ROLLNO</label>
-    <input type="text" id="srollno"><br><br>
-    <label for="branch">BRANCH</label>
-    <input type="text" id="sbranch"><br><br>
-    <button id="insertbtn">ADD</button>
-    <button id="deletebtn">DELETE</button>
+   
+    <h1>STUDENT MANAGEMENT SYSTEM</h1>
+    <label>NAME</label><input id="Name" type="text"></input><br><br>
+    <label>ROLLNO</label><input id="Rollno" type="text"></input><br><br>
+    <label>EMAIL</label><input id="Email" type="text"></input><br><br>
+    <label>GENDER</label>
+      <select id="Gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    <hr>
+    <button id="addbtn">INSERT</button>
+    <button id="readbtn">READ</button>
     <button id="updatebtn">UPDATE</button>
-    <button id="readbtn">DISPLAY</button>
-    <br><br>
-    <hr>
-    <h2 align="center">student</h2>
-    <p id="m"></p>
-    <hr>
-    <label>
-        <h2 align="center">student</h2>
-    </label>
-    <table border=1 id="td" width="100%">
-        <thead>
-            <tr>
-                <th>NAME</th>
-                <th>ROLLNO</th>
-                <th>BRANCH</th>
-                
-            </tr>
-        </thead>
-        <tbody id="data">
+    <button id="deletebtn">DELETE</button>
+    <p id="a"></p>
 
-        </tbody>
-        
-    </table>
-    <br><br>
-
-    <script src="script.js" type="module"></script>
-
+    <script src=scripts.js type="module">
+       
+      </script>
+     
 </body>
 </html>
